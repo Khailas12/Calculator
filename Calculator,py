@@ -1,0 +1,34 @@
+while True:
+    x = float(input("First Num: "))
+    y = float(input("Seconf Num: "))
+
+    z = print("""
+    Addition        : A
+    Subtraction     : S
+    Multiplication  : M
+    Division        : D""")
+    z = input("Type: ")
+
+    if z.upper() == "A":
+        print(f"Addition = {x + y}")
+
+    elif z.upper() == "S":
+        print(f"Subtration  = {x - y}")
+
+    elif z.upper() == "D":
+        print(f"Division = {x / y}")
+
+    elif z.upper() == "M":
+        print(f"Multiplication = {x * y}")
+
+    o = input("Do u Wanna Continue? (Y/N): ")
+    if o.upper() == "Y":
+        print("Let's Go Again...")
+
+    elif o.upper() == "N":
+        print("Bye...")
+        break
+    else:
+        o.upper()
+        print("Invalid Entry")
+        break
